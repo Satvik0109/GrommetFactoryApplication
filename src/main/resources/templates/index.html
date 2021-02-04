@@ -1,5 +1,5 @@
 
-<html>
+<html xmlns:th="http://www.thymleaf.org">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Place your Grommet order here.</h1>
-        <form action="grommetFactory">
+        <form method="post" th:action="@{/grommetFactory}">
             <table>
                 <tr>
                     <td>Red Grommets</td>
