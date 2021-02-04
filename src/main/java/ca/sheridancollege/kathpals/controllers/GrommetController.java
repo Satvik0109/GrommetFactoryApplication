@@ -43,4 +43,10 @@ public class GrommetController {
         return "DisplayGrommets";
         }
 
+        @GetMapping("/resetGrommets")
+    public String reset(){
+        grommets.clear();
+        return ("redirect:/");
+        }
+
 }
